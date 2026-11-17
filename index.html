@@ -4,25 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Weather App</h1>
+<div class="container">
 
-    <div class="search-box">
-      <input type="text" id="locationInput" placeholder="Enter city">
-      <button id="searchBtn">Search</button>
-      <button id="refreshBtn">Refresh</button>
-    </div>
+  <header>
+    <h1>🌤 Weather Dashboard</h1>
 
-    <div id="weatherCard" class="weather-card"></div>
+    <button id="themeBtn">
+      Toggle Theme
+    </button>
+  </header>
 
-    <h2>24 Hour Forecast</h2>
-    <div id="forecast" class="forecast"></div>
+  <div class="search-box">
+    <input
+      type="text"
+      id="locationInput"
+      placeholder="Enter city"
+    >
+
+    <button id="searchBtn">
+      Search
+    </button>
+
+    <button id="refreshBtn">
+      Refresh
+    </button>
   </div>
 
-  <script src="script.js"></script>
+  <div id="loader" class="loader hidden"></div>
+
+  <div id="weatherCard"></div>
+
+  <h2>Next 24 Hours</h2>
+  <div id="forecast" class="forecast"></div>
+
+  <h2>7 Day Forecast</h2>
+  <div id="weekForecast" class="weekForecast"></div>
+
+  <h2>Temperature Trend</h2>
+  <canvas id="tempChart"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
