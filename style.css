@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e293b;
+    color: white;
+    margin: 0;
+    padding:20px;
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.search-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.weather-card {
+  background: #334155;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+  gap: 10px;
+}
+
+.hour-card {
+  background: #475569;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
